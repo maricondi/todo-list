@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cebee2d3-2ce5-48f8-a509-9fea988f5058" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/todo-list.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Schedule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Schedule.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/MenuComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/MenuComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CreateTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CreateTask.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/MyTasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MyTasks.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,10 +27,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/layout/MenuComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="204">
               <caret line="37" column="70" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -74,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/MyTasks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+            <state relative-caret-position="180">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -171,10 +160,10 @@
         <option value="$PROJECT_DIR$/src/redux/actions/task.js" />
         <option value="$PROJECT_DIR$/src/redux/reducers/task.js" />
         <option value="$PROJECT_DIR$/src/pages/CreateTask.js" />
-        <option value="$PROJECT_DIR$/src/pages/MyTasks.js" />
         <option value="$PROJECT_DIR$/src/components/Schedule.js" />
         <option value="$PROJECT_DIR$/src/pages/Home.js" />
         <option value="$PROJECT_DIR$/src/layout/MenuComponent.js" />
+        <option value="$PROJECT_DIR$/src/pages/MyTasks.js" />
       </list>
     </option>
   </component>
@@ -277,7 +266,7 @@
       <workItem from="1553014736179" duration="2215000" />
       <workItem from="1553085266531" duration="10863000" />
       <workItem from="1553172858712" duration="16658000" />
-      <workItem from="1553262127326" duration="10693000" />
+      <workItem from="1553262127326" duration="11269000" />
     </task>
     <task id="LOCAL-00001" summary="primeiro commit">
       <created>1553271848501</created>
@@ -297,7 +286,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94139000" />
+    <option name="totallyTimeSpent" value="94715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1365" y="0" width="1368" height="769" extended-state="6" />
@@ -305,9 +294,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.13328369" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13328369" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.15944272" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.13467492" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -403,16 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/MyTasks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Schedule.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -455,8 +434,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/layout/MenuComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="204">
           <caret line="37" column="70" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/MyTasks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

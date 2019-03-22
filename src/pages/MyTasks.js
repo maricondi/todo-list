@@ -10,8 +10,8 @@ class MyTasks extends Component {
   };
 
   componentDidMount() {
-    const { addTask } = this.props;
-    addTask(JSON.parse(localStorage.getItem('taskList')));
+    const { changeTask } = this.props;
+    changeTask(JSON.parse(localStorage.getItem('taskList')));
   }
 
   handleOpenModal = (id) => {
@@ -40,7 +40,6 @@ class MyTasks extends Component {
     let editedTaskList = [];
 
     editedTaskList.push(taskStorage);
-    console.log('task: ',taskStorage);
 
     taskStorageList.map(task => {
       if(task.id !== taskStorage.id) {
@@ -54,7 +53,6 @@ class MyTasks extends Component {
       }
     });
 
-    console.log('task list: ', editedTaskList);
     localStorage.setItem('taskList', JSON.stringify(editedTaskList));
     changeTask(editedTaskList);
     this.handleCloseModal();
@@ -82,8 +80,6 @@ class MyTasks extends Component {
   };
 
   render() {
-
-    console.log(JSON.parse(localStorage.getItem('taskList')));
 
     const columns = [{
         title: 'Type',
