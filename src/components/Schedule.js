@@ -9,16 +9,20 @@ class Schedule extends Component {
 
   state = {
     visible: false,
-    taskDate: '',
-    id: 1
+    taskDate: ''
   };
 
 
   handleCreateTask = (type, content, date) => {
     const { addTask } = this.props;
-    const { id } = this.state;
 
-    this.setState({ id: id + 1 });
+    const tasks = JSON.parse(localStorage.getItem('taskList'));
+    let id = 0;
+    tasks.map(it => {
+      if(id <= it.id) {
+        id = it.id + 1;
+      }
+    });
 
     const taskListTemplate = [{
         id,
@@ -72,8 +76,6 @@ class Schedule extends Component {
 
   render() {
     const { visible, taskDate, id } = this.state;
-    console.log('storage: ', JSON.parse(localStorage.getItem('taskList')));
-    console.log('store: ', this.props.taskList);
 
     return (
       <div style={{ margin: '20px 20px 20px 300px' }}>

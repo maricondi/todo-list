@@ -33,7 +33,31 @@ class MyTasks extends Component {
   };
 
   handleEditTask = (params) => {
-    console.log('params: ',params);
+    const { changeTask } = this.props;
+    localStorage.setItem('task', JSON.stringify(params));
+    const taskStorage = JSON.parse(localStorage.getItem('task'));
+    const taskStorageList = JSON.parse(localStorage.getItem('taskList'));
+    let editedTaskList = [];
+
+    editedTaskList.push(taskStorage);
+    console.log('task: ',taskStorage);
+
+    taskStorageList.map(task => {
+      if(task.id !== taskStorage.id) {
+        const newEditedTask = {
+          id: task.id,
+          type: task.type,
+          content: task.content,
+          date: task.date
+        };
+        editedTaskList.push(newEditedTask);
+      }
+    });
+
+    console.log('task list: ', editedTaskList);
+    localStorage.setItem('taskList', JSON.stringify(editedTaskList));
+    changeTask(editedTaskList);
+    this.handleCloseModal();
   };
 
   handleCloseModal = () => {
@@ -59,8 +83,7 @@ class MyTasks extends Component {
 
   render() {
 
-    // console.log(JSON.parse(localStorage.getItem('taskList')));
-    // console.log('task: ',this.state.task);
+    console.log(JSON.parse(localStorage.getItem('taskList')));
 
     const columns = [{
         title: 'Type',
@@ -89,11 +112,9 @@ class MyTasks extends Component {
         )
       }];
 
-    const lTaskList = JSON.parse(localStorage.getItem('taskList'));
     const { taskList } = this.props;
     const { visible, id } = this.state;
 
-    console.log('Props: ', taskList,' Local: ',lTaskList);
 
     return (
       <div style={{ margin: '20px 20px 20px 320px' }}>

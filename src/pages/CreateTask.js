@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Modal, Input, Select, Button, DatePicker } from "antd";
 import Proptypes from 'prop-types';
+import moment from "moment";
 
 const Option = Select.Option;
 
@@ -14,15 +15,14 @@ class CreateTask extends Component {
   };
 
   state = {
-    type: '',
+    type: 'success',
     content: '',
     date: ''
   };
 
 
   onChange = (type, value) => {
-  console.log(value);
-  this.setState({ [type]: value, id: 1 });
+  this.setState({ [type]: value });
 };
 
 
@@ -39,7 +39,7 @@ class CreateTask extends Component {
     const editableDate = editable ? (
       <div style={{display: 'flex', justifyContent: 'left', marginTop: '10px'}}>
         <div style={{marginTop: '5px', flexBasis: '15%'}}>Date:</div>
-        <Input style={{flexBasis: '80%'}} placeholder={taskStorage.date} onChange={event => this.onChange('content', event.target.value)}/>
+        <DatePicker style={{flexBasis: '80%'}} placeholder={taskStorage.date} onChange={event => this.onChange('date', moment(event).format('DD/MM/YYYY'))}/>
       </div>
     ) : null;
 
@@ -70,10 +70,10 @@ class CreateTask extends Component {
           <div style={{display: 'flex', justifyContent: 'left'}}>
             <div style={{marginTop: '5px', flexBasis: '15%'}}>Priority:</div>
             <Select style={{width: '200px'}} defaultValue={'success'}
-                    onChange={(event) => this.onChange('type', event)}>
+                    onChange={value => this.onChange('type', value)}>
               <Option value={'success'}>Low priority</Option>
               <Option value={'warning'}>Medium priority</Option>
-              <Option value={'error'}>Hight priority</Option>
+              <Option value={'error'}>High priority</Option>
             </Select>
           </div>
 
