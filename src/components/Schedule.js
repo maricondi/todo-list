@@ -18,11 +18,11 @@ class Schedule extends Component {
 
     const tasks = JSON.parse(localStorage.getItem('taskList'));
     let id = 0;
-    tasks.map(it => {
+    tasks ? tasks.map(it => {
       if(id <= it.id) {
         id = it.id + 1;
       }
-    });
+    }) : id = 1;
 
     const taskListTemplate = [{
         id,
